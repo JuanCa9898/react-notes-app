@@ -1,10 +1,23 @@
-function NoteItem({note, index, deleteNote}) {
+import {useState} from "react";
+
+function NoteItem({note, index, deleteNote, setView, setEditingIndex}) {
+
+    function handleEdit() {
+        setEditingIndex(index);
+        setView("edit");
+    }
+
     return (
         <li>
-            {note}
+            {note.title}
+
+            <button onClick={handleEdit}>
+                Edit
+            </button>
             <button onClick={() => deleteNote(index)}>
                 Delete
             </button>
+
         </li>
     );
 }

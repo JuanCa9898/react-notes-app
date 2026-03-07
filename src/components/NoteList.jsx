@@ -1,6 +1,6 @@
 import NoteItem from "./NoteItem";
 
-function NoteList ({notes, deleteNote}) {
+function NoteList ({notes, deleteNote, setView, setEditingIndex}) {
     if (notes.length === 0) {
         return <p>No notes yet</p>;
     }
@@ -13,6 +13,8 @@ function NoteList ({notes, deleteNote}) {
                     note={note}
                     index={index}
                     deleteNote={deleteNote}
+                    setView={setView}
+                    setEditingIndex={setEditingIndex}
                 />
             ))}
         </ul>
