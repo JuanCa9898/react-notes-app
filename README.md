@@ -4,7 +4,7 @@ A full notes application with react.
 
 ## Live Demo
 
-Coming soon!
+https://react-notes-app-coral-phi.vercel.app
 
 ## Features
 
