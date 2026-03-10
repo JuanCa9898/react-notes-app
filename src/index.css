@@ -30,13 +30,13 @@ button {
   margin-left: 6px;
   border: none;
   border-radius: 6px;
-  background: #4CAF50;
+  background: #0000ff;
   color: white;
   cursor: pointer;
 }
 
 button:hover {
-  background: #45a049;
+  background: #000099;
 }
 
 ul {
@@ -69,14 +69,14 @@ li button {
   border: none;
   font-size: 30px;
   color: white;
-  background: #4CAF50;
+  background: #0000ff;
   cursor: pointer;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
 }
 
 .new-note-btn:hover {
-  background: #45a049;
+  background: #000099;
   transform: scale(1.1);
 }
 
@@ -89,4 +89,13 @@ textarea {
   border-radius: 6px;
   border: 1px solid #ccc;
   resize: none;
+}
+
+.note-card {
+  cursor: pointer;
+}
+
+.note-card:hover {
+  transform: translateY(-2px);
+  transition: 0.15s;
 }

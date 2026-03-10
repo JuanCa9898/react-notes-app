@@ -8,13 +8,19 @@ function NoteItem({note, index, deleteNote, setView, setEditingIndex}) {
     }
 
     return (
-        <li>
+        <li className = " note-card" onClick={handleEdit}>
             {note.title}
 
-            <button onClick={handleEdit}>
+            <button onClick={(e) => {
+                e.stopPropagation();
+                handleEdit();
+            }}>
                 Edit
             </button>
-            <button onClick={() => deleteNote(index)}>
+            <button onClick={(e) => {
+                e.stopPropagation();
+                deleteNote(index);
+            }}>
                 Delete
             </button>
 

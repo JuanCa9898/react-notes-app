@@ -8,16 +8,12 @@ import EditNotePage from "./components/EditNotePage";
 import './App.css';
 
 function App() {
-  const [notes, setNotes] = useState([]);
+  const [notes, setNotes] = useState(() => {
+    const savedNotes = localStorage.getItem("notes");
+    return savedNotes ? JSON.parse(savedNotes) : [];
+  });
   const [view, setView] = useState("list");
   const [editingIndex, setEditingIndex] = useState(null);
-
-  useEffect(() => {
-    const savedNotes = localStorage.getItem("notes");
-    if (savedNotes) {
-      setNotes(JSON.parse(savedNotes));
-    }
-  }, []);
 
   useEffect(() => {
     console.log("Saving Notes: ", notes);
