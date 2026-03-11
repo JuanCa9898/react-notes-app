@@ -16,7 +16,6 @@ function App() {
   const [editingIndex, setEditingIndex] = useState(null);
 
   useEffect(() => {
-    console.log("Saving Notes: ", notes);
     localStorage.setItem("notes", JSON.stringify(notes));
   }, [notes]);
 
