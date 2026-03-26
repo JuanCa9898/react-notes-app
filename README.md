@@ -4,7 +4,7 @@ A notes application built with react that allows users to create, edit and manag
 
 ## Preview
 
-<img width="1910" height="867" alt="image" src="https://github.com/user-attachments/assets/afa13a55-8c70-47a6-8f3e-c6455abca934" />
+<img width="1200" height="500" alt="image" src="https://github.com/user-attachments/assets/afa13a55-8c70-47a6-8f3e-c6455abca934" />
 
 ## Live Demo
 
